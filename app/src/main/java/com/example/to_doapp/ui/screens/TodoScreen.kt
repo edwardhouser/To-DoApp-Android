@@ -71,7 +71,7 @@ fun TodoScreen(viewModel: TodoViewModel){
                     inputText = ""
 
                 },
-                modifier = Modifier.testTag("add button")
+                modifier = Modifier.testTag("add_button")
             ) {
                 Text("Add Task")
 
@@ -79,7 +79,7 @@ fun TodoScreen(viewModel: TodoViewModel){
         } // end of row
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-            text = "${viewModel.task.size}",
+            text = "${viewModel.task.size} task(s)",
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             modifier = Modifier.padding(bottom = 12.dp)
